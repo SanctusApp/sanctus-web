@@ -7,14 +7,14 @@ import { Link } from "react-router-dom"
 export default function ContactUs() {
     const { t } = useTranslation()
     return (
-        <Container fluid className="d-flex align-items-center flex-column container-fluid" data-aos="slide-right" style={{backgroundColor: "#CCDCEC"}}>
-            <Row>
+        <Container fluid className="d-flex align-items-center flex-column container-fluid" style={{backgroundColor: "#CCDCEC"}}>
+            <Row data-aos="fade-right">
                 <h2 className="h2-responsive bold">{t('nav_item_contact')}</h2>
             </Row>
-            <Row>
+            <Row data-aos="fade-right" data-aos-delay="300">
                 <a href="mailto:contact@sanctus.cc" className="text-link">contact@sanctus.cc</a>
             </Row>
-            <Row>
+            <Row data-aos="fade-right" data-aos-delay="600">
                 <Col>
                     <Link to={{pathname: "https://www.instagram.com/sanctusapp/"}} target="_blank" className="text-link"><Instagram size={40}/></Link>
                 </Col>
@@ -22,7 +22,7 @@ export default function ContactUs() {
                 <Link to={{pathname: "https://www.facebook.com/Sanctus-B%C3%ADblia-Liturgia-Ter%C3%A7os-e-Ora%C3%A7%C3%B5es-106478487553539"}} target="_blank" className="text-link"><Facebook size={40}/></Link>
                 </Col>
             </Row>
-            <Row>
+            <Row data-aos="fade-right" data-aos-delay="900">
                 <Col xs={12} sm={6}>
                     <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628623448/sanctus/google-play-badge-es_drbpax.png" alt="google-play-icon" height="55px"/>
                 </Col>

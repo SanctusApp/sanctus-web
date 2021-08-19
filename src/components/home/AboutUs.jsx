@@ -8,12 +8,12 @@ export default function AboutUs() {
     const { t } = useTranslation()
     
     return (
-        <Container data-aos="slide-right" className="container-fluid no-margin-left animation">
+        <Container className="container-fluid no-margin-left animation">
             <Row>
-                <Col xs={12} md={6} >
+                <Col xs={12} md={6} data-aos="fade-right">
                 <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628780787/sanctus/about-img_jjxn4e.svg" alt="hands-icon" width="80%" />
                 </Col>
-                <Col xs={12} md={6} className="margin-left">
+                <Col xs={12} md={6} className="margin-left" data-aos="fade-right" data-aos-delay="300">
                 <h2 className="h2-responsive bold">{t('nav_item_about')}</h2>
                 <p className="paragraph">{t('about_text')}</p>
                 </Col>
