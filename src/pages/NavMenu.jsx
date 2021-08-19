@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState} from 'react'
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import i18n from 'i18next';
@@ -28,39 +28,33 @@ export default function NavMenu() {
     const { t } = useTranslation()
     const navDropdownTitle = <span className={`flag-icon flag-icon-${currentLanguage.country_code} mx-2`}></span>
     
-    const [navBackground, setNavBackground] = useState(false)
-    const navRef = useRef()
-    navRef.current = navBackground
-    useEffect(() => {
-      const handleScroll = () => {
-        const show = window.scrollY > 50
-        if (navRef.current !== show) {
-          setNavBackground(show)
+   const [colorChange, setColorChange] = useState(false);
+   const changeNavbarColor = () =>{
+        if(window.scrollY >= 50){
+        setColorChange(true);
         }
-      }
-      document.addEventListener('scroll', handleScroll)
-      return () => {
-        document.removeEventListener('scroll', handleScroll)
-      }
-    }, [])
+        else{
+        setColorChange(false);
+        }
+    };
+ window.addEventListener('scroll', changeNavbarColor);
 
     
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" variant="light" fixed="top" style={{ transition: '1s ease', backgroundColor: navBackground ? 'white' : 'transparent'}}>
+            <Navbar collapseOnSelect expand="lg" variant="light" sticky="top" style={{ transition: '1s ease', backgroundColor: colorChange ? 'white' : '#EDC8C8'}}>
                 <Container>
                     <Navbar.Brand href="#home"> <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628852171/sanctus/ico_v2sghi.svg" width="32px" alt="brand-icon"/> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         {/* mx-auto (instead of me-auto) centralize these items */}
-                        <Nav className="mx-auto"> 
+                        <Nav className="mx-auto d-flex align-items-center"> 
                             <Nav.Link href="#home" className="bold black padding-side">{t('nav_item_home')} </Nav.Link>
                             <Nav.Link href="#about" className="bold black padding-side">{t('nav_item_about')}</Nav.Link>
                             <Nav.Link href="#features" className="bold black padding-side">{t('nav_item_features')}</Nav.Link>
                             <Nav.Link href="#contact" className="bold black padding-side">{t('nav_item_contact')}</Nav.Link>
                         </Nav>
-                        <Nav>
-                            <NavDropdown.Divider/>
+                        <Nav className="d-flex align-items-center">   
                             <div className="d-flex flex-row align-items-center">                       
                                 <NavDropdown title={navDropdownTitle} className="black" id="collasible-nav-dropdown" >                        
                                     {

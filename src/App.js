@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Switch, Route, withRouter } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Styles from './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 

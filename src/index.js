@@ -10,6 +10,7 @@ import { Spinner} from 'react-bootstrap';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Loading from './pages/Loading'
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -29,7 +30,7 @@ i18n
 
 
 const loadingMarkup = (
-  <Spinner animation="border" variant="dark" />
+  <Loading/>
 )// with this we avoid that appear the keys on the screen before load the values of the translation
 
 ReactDOM.render(
