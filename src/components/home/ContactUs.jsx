@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import ReactStoreBadges from 'react-store-badges'
 import { useTranslation } from "react-i18next";
@@ -26,7 +26,7 @@ export default function ContactUs() {
                 </Col>
             </Row>
             
-            <Row data-aos="fade-right" data-aos-delay="900" className="mt-4">
+            <Row data-aos="fade-right" data-aos-delay="900" className="mt-4 pb-4">
                 <Col>
                 { currentLanguageCode === 'pt' ? <ReactStoreBadges platform={'android'} url={'https://play.google.com/store/apps/details?id=com.evangelhododiacatolico'} locale={'pt-br'} target="_blank"/> : currentLanguageCode === 'es' ? <ReactStoreBadges platform={'android'} url={'https://play.google.com/store/apps/details?id=com.evangelhododiacatolico'} locale={'es-es'} target="_blank"/> : <ReactStoreBadges platform={'android'} url={'https://play.google.com/store/apps/details?id=com.evangelhododiacatolico'} locale={'en-us'} target="_blank"/> }
                 </Col>

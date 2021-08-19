@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
+
 
 export default function Features() {
 
