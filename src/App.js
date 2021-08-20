@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import {Route} from 'react-router-dom';
-import Styles from './App.css'
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 //---------------- BOOTSTRAP ----------------
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min.js'
-import 'bootstrap/dist/js/bootstrap.min.js'
+
+// import 'jquery/dist/jquery.min.js'
+// import 'bootstrap/dist/js/bootstrap.min.js'
 //--------------------------------------------
+
+import Styles from './App.css'
 
 //---------------- COMPONENTS ----------------
 import NavMenu from './pages/NavMenu'
