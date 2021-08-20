@@ -7,14 +7,14 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 import 'flag-icon-css/css/flag-icon.min.css'
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Loading from './pages/Loading'
 //---------------- BOOTSTRAP ----------------
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 //--------------------------------------------
 
