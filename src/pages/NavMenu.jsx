@@ -42,7 +42,7 @@ export default function NavMenu() {
     
     return (
         <>
-            <Navbar collapseOnSelect expand="lg" variant="light" sticky="top" style={{ transition: '1s ease', backgroundColor: colorChange ? 'white' : '#EDC8C8'}}>
+            <Navbar collapseOnSelect expand="lg" variant="light" fixed="top" style={{ transition: '1s ease', backgroundColor: colorChange ? 'white' : '#EDC8C8'}}>
                 <Container>
                     <Navbar.Brand href="#home"> <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628852171/sanctus/ico_v2sghi.svg" width="32px" alt="brand-icon"/> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
