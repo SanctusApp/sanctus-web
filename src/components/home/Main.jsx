@@ -8,7 +8,7 @@ export default function Main() {
     return (
         <Container fluid className="d-flex align-items-center flex-column container-fluid" style={{backgroundColor: "#EDC8C8"}} id={'home'}>
             <Row data-aos="fade-right">
-                <h1 className="h1-responsive bold">Sanctus App</h1>
+                <h1 className="h1-responsive bold">Sanctus</h1>
             </Row>
             {/* <Row data-aos="fade-right" data-aos-delay="300">
                 <Button size="lg" className="btn-lg">
