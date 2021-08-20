@@ -6,7 +6,7 @@ import { Container, Row } from 'react-bootstrap';
 export default function Main() {
     // const { t } = useTranslation()
     return (
-        <Container fluid className="d-flex align-items-center flex-column cont-fluid" style={{backgroundColor: "#EDC8C8"}} id={'home'}>
+        <Container fluid className="d-flex align-items-center justify-content-center flex-column cont-fluid" style={{backgroundColor: "#EDC8C8", height: "100vh"}} id={'home'}>
             <Row data-aos="fade-right">
                 <h1 className="h1-responsive bold">Sanctus</h1>
             </Row>
