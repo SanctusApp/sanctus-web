@@ -91,4 +91,9 @@ body {
 
 .nav-link:hover {
     color: #FD5657 !important;
-  }
+}
+
+.m-main {
+    margin: 58.73px 0 0;
+    /* this is the height of the nav bar (42.73 + 16px of padding */
+}
