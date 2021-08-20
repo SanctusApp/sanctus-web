@@ -9,10 +9,10 @@ export default function Features() {
     
     return (
         <Container className="cont-fluid" id={'features'}>
-            <Row data-aos="fade-right" style={{paddingLeft: "12px"}} >
-                <h2 className="h2-responsive bold">{t('nav_item_features')}</h2>
+            <Row data-aos="fade-right" >
+                <h2 className="h2-responsive bold text-center">{t('nav_item_features')}</h2>
             </Row>
-            <Row className="d-flex justify-content-center mt-4">
+            <Row className="d-flex justify-content-center mt-5">
                 <Col xs={12} md={{ span: 3}} className="d-flex align-items-center flex-column" data-aos="fade-right" data-aos-delay="300">
                     <div className="circle d-flex justify-content-center"><img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628619914/sanctus/feature-1_dr4lgl.svg" alt="feature-1-icon"/></div>
                     <h3 className="mt-4 text-center">{t('features_one_title')}</h3>
