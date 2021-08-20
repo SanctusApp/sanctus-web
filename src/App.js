@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {Route} from 'react-router-dom';
 import Styles from './App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -25,7 +26,7 @@ function App() {
   return (
    <>
     <NavMenu/>
-    <Home/>
+    <Route path={'/'} component={Home}/>
    </>
   );
 }
