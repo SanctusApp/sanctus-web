@@ -13,7 +13,7 @@ body {
 }
 
 .padding-side {
-    padding: 0 20px !important;
+    margin: 0 12px !important;
 }
 
 .black {
@@ -85,7 +85,10 @@ body {
     text-decoration: inherit;
 }
 
-
-.red {
-    background-color: "red"
+.text-link:hover {
+    color: #FD5657 !important
 }
+
+.nav-link:hover {
+    color: #FD5657 !important;
+  }
