@@ -10,7 +10,7 @@ export default function ContactUs() {
     const currentLanguageCode = cookies.get('i18next') || 'en'
     const { t } = useTranslation()
     return (
-        <Container fluid className="d-flex align-items-center flex-column container-fluid" style={{backgroundColor: "#CCDCEC"}} id={'contact'}>
+        <Container fluid className="d-flex align-items-center flex-column cont-fluid" style={{backgroundColor: "#CCDCEC"}} id={'contact'}>
             <Row data-aos="fade-right">
                 <h2 className="h2-responsive bold">{t('nav_item_contact')}</h2>
             </Row>

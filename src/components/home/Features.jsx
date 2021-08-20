@@ -8,8 +8,8 @@ export default function Features() {
     const { t } = useTranslation()
     
     return (
-        <Container className="container-fluid" id={'features'}>
-            <Row data-aos="fade-right" >
+        <Container className="cont-fluid" id={'features'}>
+            <Row data-aos="fade-right" style={{paddingLeft: "12px"}} >
                 <h2 className="h2-responsive bold">{t('nav_item_features')}</h2>
             </Row>
             <Row className="d-flex justify-content-center mt-4">

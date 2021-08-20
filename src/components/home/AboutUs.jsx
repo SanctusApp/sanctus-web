@@ -8,7 +8,7 @@ export default function AboutUs() {
     const { t } = useTranslation()
     
     return (
-        <Container className="container-fluid no-margin-left" id={'about'}>
+        <Container className="cont-fluid no-margin-left" id={'about'}>
             <Row>
                 <Col xs={12} md={6} data-aos="fade-right">
                 <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628780787/sanctus/about-img_jjxn4e.svg" alt="hands-icon" width="70%" />
