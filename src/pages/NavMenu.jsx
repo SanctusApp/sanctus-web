@@ -53,7 +53,6 @@ export default function NavMenu() {
                             <Nav.Link eventKey="1" as={Link} offset={-250} to="home"className="bold black padding-side text-link">{t('nav_item_home')} </Nav.Link>
                             <Nav.Link eventKey="2" as={Link} offset={-250} to="about" className="bold black padding-side text-link">{t('nav_item_about')}</Nav.Link>
                             <Nav.Link eventKey="3" as={Link} offset={-250} to="features" className="bold black padding-side text-link">{t('nav_item_features')}</Nav.Link>
-                            {/* <Link to="features" spy={true} smooth={true} duration={0}className="bold black padding-side text-link">{t('nav_item_features')}</Link> */}
                             <Nav.Link eventKey="4" as={Link} offset={-230} to="contact" className="bold black padding-side text-link">{t('nav_item_contact')}</Nav.Link>
                         </Nav>
                         <Nav className="d-flex align-items-center">   
