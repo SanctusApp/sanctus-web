@@ -86,12 +86,10 @@ body {
 }
 
 .text-link:hover {
-    color: #FD5657 !important
+    color: #FD5657 !important;
+    cursor: pointer;
 }
 
-.nav-link:hover {
-    color: #FD5657 !important;
-}
 
 .m-main {
     margin: 58.73px 0 0;

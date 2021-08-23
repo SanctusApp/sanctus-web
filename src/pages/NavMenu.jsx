@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { useTranslation } from "react-i18next";
 import i18n from 'i18next';
 import cookies from 'js-cookie'
+import { Link } from "react-scroll"
 
 const languages = [
     {
@@ -44,15 +45,16 @@ export default function NavMenu() {
         <>
             <Navbar collapseOnSelect expand="lg" variant="light" sticky="top" style={{ transition: '1s ease', backgroundColor: colorChange ? 'white' : '#EDC8C8'}}>
                 <Container>
-                    <Navbar.Brand href="#home"> <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628852171/sanctus/ico_v2sghi.svg" width="32px" alt="brand-icon"/> </Navbar.Brand>
+                    <Navbar.Brand eventKey="1" as={Link} offset={-250} to="home"> <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628852171/sanctus/ico_v2sghi.svg" width="32px" alt="brand-icon"/> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         {/* mx-auto (instead of me-auto) centralize these items */}
                         <Nav className="mx-auto d-flex align-items-center"> 
-                            <Nav.Link href="#home" className="bold black padding-side">{t('nav_item_home')} </Nav.Link>
-                            <Nav.Link href="#about" className="bold black padding-side">{t('nav_item_about')}</Nav.Link>
-                            <Nav.Link href="#features" className="bold black padding-side">{t('nav_item_features')}</Nav.Link>
-                            <Nav.Link href="#contact" className="bold black padding-side">{t('nav_item_contact')}</Nav.Link>
+                            <Nav.Link eventKey="1" as={Link} offset={-250} to="home"className="bold black padding-side text-link">{t('nav_item_home')} </Nav.Link>
+                            <Nav.Link eventKey="2" as={Link} offset={-250} to="about" className="bold black padding-side text-link">{t('nav_item_about')}</Nav.Link>
+                            <Nav.Link eventKey="3" as={Link} offset={-250} to="features" className="bold black padding-side text-link">{t('nav_item_features')}</Nav.Link>
+                            {/* <Link to="features" spy={true} smooth={true} duration={0}className="bold black padding-side text-link">{t('nav_item_features')}</Link> */}
+                            <Nav.Link eventKey="4" as={Link} offset={-230} to="contact" className="bold black padding-side text-link">{t('nav_item_contact')}</Nav.Link>
                         </Nav>
                         <Nav className="d-flex align-items-center">   
                             <div className="d-flex flex-row align-items-center">                       

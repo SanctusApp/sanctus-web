@@ -5,12 +5,14 @@ import { useTranslation } from "react-i18next";
 import { Facebook, Instagram } from 'react-bootstrap-icons';
 import { Link } from "react-router-dom"
 import cookies from 'js-cookie'
+import { Element } from 'react-scroll'
 
 export default function ContactUs() {
     const currentLanguageCode = cookies.get('i18next') || 'en'
     const { t } = useTranslation()
     return (
-        <Container fluid className="d-flex align-items-center flex-column cont-fluid" style={{backgroundColor: "#CCDCEC"}} id={'contact'}>
+    <Element id={'contact'}>
+        <Container fluid className="d-flex align-items-center flex-column cont-fluid" style={{backgroundColor: "#CCDCEC"}}>
             <Row data-aos="fade-right">
                 <h2 className="h2-responsive bold">{t('nav_item_contact')}</h2>
             </Row>
@@ -34,8 +36,8 @@ export default function ContactUs() {
                 { currentLanguageCode === 'pt' ? <ReactStoreBadges platform={'ios'} locale={'pt-br'} target="_blank"/> : currentLanguageCode === 'es' ? <ReactStoreBadges platform={'ios'} locale={'es-es'} target="_blank"/> : <ReactStoreBadges platform={'ios'} locale={'en-us'} target="_blank"/> }
                     <p className="paragraph text-center">{t('contact_store_badge')}</p>
                 </Col>
-            </Row>
-                   
+            </Row>                 
         </Container>
+    </Element>
     )
 }
