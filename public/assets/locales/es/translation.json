@@ -2,6 +2,7 @@
     "nav_item_home": "Comienzo",
     "nav_item_about": "Sobre nosotros",
     "nav_item_features": "Funcionalidades",
+    "nav_item_store":"Evaluaciones",
     "nav_item_contact": "Contáctenos",
     "main_btn": "ACCEDER AHORA",
     "about_text": "Sanctus es una aplicación que cuenta con varias funcionalidades y nuevos contenidos todos los días, para proporcionarte la mejor experiencia para que reces, de manera práctica, en cualquier momento y en cualquier lugar. Si buscas perseverar y caminar con Dios, asegúrese de usar Sanctus.",
@@ -11,5 +12,8 @@
     "features_two_text":"Tenga acceso a más de 150 oraciones, incluyendo coronillas y novenas. El contenido está organizado de una manera sencilla y práctica que le permite enfocarse completamente en la oración y estar en comunión con Dios. Además, todas las oraciones individuales y las coronillas están disponibles en audio.",
     "features_three_title":"Lea la Biblia ",
     "features_three_text":"A través de los planes diarios, medita en la Palabra de Dios según el momento en que vives, o lee toda la historia de la vida de Jesús contada en los cuatro Evangelios.",
+    "reviews_one_subtitle": "estrellas",
+    "reviews_two_subtitle": "evaluaciones",
+    "reviews_three_subtitle": "downloads",
     "contact_store_badge": "EN BREVE"
 }

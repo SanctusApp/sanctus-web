@@ -1,14 +1,12 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap';
-import { Element } from 'react-scroll'
 // import { useTranslation } from "react-i18next";
 // import { ArrowRight } from 'react-bootstrap-icons';
 
 export default function Main() {
     // const { t } = useTranslation()
     return (
-        <Element id='home' name='home'>
-            <Container fluid className="d-flex align-items-center justify-content-center flex-column" style={{backgroundColor: "#EDC8C8", height: "calc(100vh - 58px)"}}>
+            <Container fluid  id='home' className="d-flex align-items-center justify-content-center flex-column" style={{backgroundColor: "#EDC8C8", height: "calc(100vh - 58px)"}}>
                 <Row data-aos="fade-right">
                     <h1 className="h1-responsive bold">Sanctus</h1>
                 </Row>
@@ -20,8 +18,6 @@ export default function Main() {
                 <Row data-aos="fade-right" data-aos-delay="600" className="mt-5">
                     <img src="https://res.cloudinary.com/dplgnsjzm/image/upload/v1628780787/sanctus/main-img_passxh.svg" alt="cross-mountain" width="90%"/>
                 </Row>
-            </Container>
-        </Element>
-        
+            </Container>    
     )
 }

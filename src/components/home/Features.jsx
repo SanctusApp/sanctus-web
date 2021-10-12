@@ -8,7 +8,7 @@ export default function Features() {
     const { t } = useTranslation()
     
     return (
-        <Container className="cont-fluid" id={'features'}>
+        <Container className="cont-fluid" id={'features'} >
             <Row data-aos="fade-right" >
                 <h2 className="h2-responsive bold text-center">{t('nav_item_features')}</h2>
             </Row>
