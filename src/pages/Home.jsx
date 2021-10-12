@@ -16,8 +16,6 @@ export default function Home() {
             <Main/>
             <AboutUs/>
             <Features/>
-            <Store/>
-            <Testimonials/>
             <ContactUs/>
         </>
     )
