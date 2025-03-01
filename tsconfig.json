@@ -24,6 +24,7 @@
       "assets/*": ["assets/*"],
       "pages/*": ["pages/*"],
       "utils/*": ["utils/*"],
+      "hooks/*": ["hooks/*"],
       "App": ["App"]
     }
   },

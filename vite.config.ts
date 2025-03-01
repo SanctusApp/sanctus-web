@@ -11,6 +11,7 @@ export default defineConfig({
       assets: path.resolve(__dirname, "src/assets"),
       pages: path.resolve(__dirname, "src/pages"),
       utils: path.resolve(__dirname, "src/utils"),
+      hooks: path.resolve(__dirname, "src/hooks"),
       App: path.resolve(__dirname, "src/App.jsx"),
     },
   },

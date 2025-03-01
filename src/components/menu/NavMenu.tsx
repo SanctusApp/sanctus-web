@@ -9,6 +9,7 @@ import MenuButton from "components/menu/MenuButton";
 import BrandIcon from "components/menu/BrandIcon";
 import LanguageSelector from "components/menu/LanguageSelector";
 import { defaultLanguageCode, languages } from "utils/utils";
+import useIsPrivacyPage from "hooks/useIsPrivacyPage";
 
 const NavMenu = () => {
   const location = useLocation();
@@ -18,6 +19,7 @@ const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(currentLanguageCode);
 
+  const isPrivacyPage = useIsPrivacyPage();
   useEffect(() => {
     const changeNavbarColor = (): void => {
       if (location.pathname === "/privacy") {
@@ -58,13 +60,17 @@ const NavMenu = () => {
     >
       <div className="container mx-auto flex justify-between items-center p-4">
         <BrandIcon />
-        <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
-        <MenuItems isOpen={isOpen} setIsOpen={setIsOpen} t={t} />
-        <LanguageSelector
-          selectedLanguage={selectedLanguage}
-          handleLanguageChange={handleLanguageChange}
-          t={t}
-        />
+        {isPrivacyPage ? null : (
+          <>
+            <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
+            <MenuItems isOpen={isOpen} setIsOpen={setIsOpen} t={t} />
+            <LanguageSelector
+              selectedLanguage={selectedLanguage}
+              handleLanguageChange={handleLanguageChange}
+              t={t}
+            />
+          </>
+        )}
       </div>
     </nav>
   );
