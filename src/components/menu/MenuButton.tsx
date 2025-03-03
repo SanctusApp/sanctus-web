@@ -6,10 +6,10 @@ const MenuButton: FC<MenuButtonProps> = ({
   setIsOpen,
 }): JSX.Element => (
   <button
-    className="lg:hidden text-black z-30"
+    className="lg:hidden z-30"
     onClick={() => setIsOpen(!isOpen)}
   >
-    {isOpen ? <X size={40} /> : <Menu size={40} />}
+    {isOpen ? <X size={30} /> : <Menu size={30} />}
   </button>
 );
 

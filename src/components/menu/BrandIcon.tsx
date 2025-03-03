@@ -15,7 +15,7 @@ const BrandIcon: FC = (): JSX.Element => {
         </Link>
       ) : (
         <LinkScroll to="home" offset={-50} className="cursor-pointer">
-          <img src={IMAGE_URL} width="50px" alt="brand-icon" />
+          <img src={IMAGE_URL} alt="brand-icon" className="size-[30px] lg:size-[50px]"/>
         </LinkScroll>
       )}
     </>

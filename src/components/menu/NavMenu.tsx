@@ -8,8 +8,8 @@ import MenuItems from "components/menu/MenuItems";
 import MenuButton from "components/menu/MenuButton";
 import BrandIcon from "components/menu/BrandIcon";
 import LanguageSelector from "components/menu/LanguageSelector";
-import { defaultLanguageCode, languages } from "utils/utils";
 import useIsPrivacyPage from "hooks/useIsPrivacyPage";
+import { defaultLanguageCode, languages } from "utils/utils";
 
 const NavMenu = () => {
   const location = useLocation();
@@ -58,7 +58,7 @@ const NavMenu = () => {
         colorChange ? "bg-white shadow-md" : "bg-brand-light"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center p-4">
+      <div className="container mx-auto flex justify-between items-center px-4 py-0 lg:px-4 lg:py-4">
         <BrandIcon />
         {isPrivacyPage ? null : (
           <>

@@ -1,9 +1,11 @@
 import { FC, JSX } from "react";
 import { motion } from "framer-motion";
 
+import { contactEmail } from "utils/utils";
+
 const ContactEmail: FC = (): JSX.Element => (
   <motion.a
-    href="mailto:include.add@gmail.com"
+    href={contactEmail}
     className="mt-4 text-lg text-blue-600 hover:underline"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}

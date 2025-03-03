@@ -8,3 +8,5 @@ export const languages = [
 ];
 
 export const defaultLanguageCode = "pt";
+
+export const contactEmail = "mailto:include.add@gmail.com"
