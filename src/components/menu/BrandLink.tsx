@@ -1,0 +1,26 @@
+import { FC, JSX } from "react";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
+
+import BrandIcon from "components/menu/BrandIcon";
+import useIsPrivacyPage from "hooks/useIsPrivacyPage";
+
+const BrandLink: FC = (): JSX.Element => {
+  const isPrivacyPage = useIsPrivacyPage();
+
+  return (
+    <>
+      {isPrivacyPage ? (
+        <Link to="/" className="cursor-pointer">
+          <BrandIcon />
+        </Link>
+      ) : (
+        <LinkScroll to="home" offset={-50} className="cursor-pointer">
+          <BrandIcon />
+        </LinkScroll>
+      )}
+    </>
+  );
+};
+
+export default BrandLink;

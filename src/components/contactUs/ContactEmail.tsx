@@ -6,7 +6,7 @@ import { contactEmail } from "utils/utils";
 const ContactEmail: FC = (): JSX.Element => (
   <motion.a
     href={contactEmail}
-    className="mt-4 text-lg text-blue-600 hover:underline"
+    className="text-lg text-blue-600 hover:underline"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1, delay: 1 }}

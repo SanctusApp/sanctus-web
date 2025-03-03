@@ -4,7 +4,7 @@ const Container: FC<ContainerProps> = ({
   children,
   className,
 }): JSX.Element => {
-  return <div className={`${className}`}>{children}</div>;
+  return <div className={`py-20 lg:py-30 px-4 md:px-20 ${className}`}>{children}</div>;
 };
 
 export default Container;

@@ -6,7 +6,7 @@ import cookies from "js-cookie";
 
 import MenuItems from "components/menu/MenuItems";
 import MenuButton from "components/menu/MenuButton";
-import BrandIcon from "components/menu/BrandIcon";
+import BrandLink from "components/menu/BrandLink";
 import LanguageSelector from "components/menu/LanguageSelector";
 import useIsPrivacyPage from "hooks/useIsPrivacyPage";
 import { defaultLanguageCode, languages } from "utils/utils";
@@ -59,7 +59,7 @@ const NavMenu = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center px-4 py-0 lg:px-4 lg:py-4">
-        <BrandIcon />
+        <BrandLink />
         {isPrivacyPage ? null : (
           <>
             <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />

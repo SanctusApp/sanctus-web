@@ -9,7 +9,7 @@ const FeatureItem: FC<FeatureItemProps> = ({ feature, i }): JSX.Element => {
   return (
     <motion.div
       key={feature}
-      className="w-full md:w-1/4 flex flex-col items-center text-center mt-10 md:mt-0"
+      className="w-full flex flex-col items-center text-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

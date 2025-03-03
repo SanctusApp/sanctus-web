@@ -11,12 +11,12 @@ const Features: FC = (): JSX.Element => {
 
   return (
     <Element id="features">
-      <Container className="px-4 md:px-20 py-30 flex flex-col items-center bg-[#FFEECC]">
+      <Container className="flex flex-col items-center bg-[#FFEECC]">
         <div>
-          <H2 className="md:mb-20 mb-10">{t("nav_item_features")}</H2>
+          <H2>{t("nav_item_features")}</H2>
         </div>
         <div>
-          <div className="flex flex-wrap justify-center md:gap-x-20">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-10 md:gap-x-20 justify-items-center">
             {features.map((feature, i) => (
               <FeatureItem key={feature} feature={feature} i={i} />
             ))}
