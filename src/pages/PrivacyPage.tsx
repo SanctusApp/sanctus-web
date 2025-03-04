@@ -1,7 +1,7 @@
 import Container from "components/_common/Container";
 import H2 from "components/_common/H2";
 import H3 from "components/_common/H3";
-import { contactEmail } from "utils/utils";
+import { contactEmail } from "constants/constants";
 
 const PrivacyPage = () => {
   return (

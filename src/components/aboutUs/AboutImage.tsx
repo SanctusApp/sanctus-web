@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { cloudinaryUrl } from "utils/utils";
+import { CLOUDINARY_BASE_URL } from "constants/constants";
 
 const AboutImage = () => (
   <motion.div
@@ -16,4 +16,4 @@ const AboutImage = () => (
 
 export default AboutImage;
 
-const IMAGE_URL = `${cloudinaryUrl}v1628780787/sanctus/about-img.svg`;
+const IMAGE_URL = `${CLOUDINARY_BASE_URL}v1628780787/sanctus/about-img.svg`;

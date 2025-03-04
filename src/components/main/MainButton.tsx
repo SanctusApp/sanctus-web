@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import Button from "components/_common/Button";
-import { STORE_URL } from "utils/utils";
+import { STORE_URL } from "constants/constants";
 
 const MainButton = ({ t }: MainButtonProps) => (
   <motion.div

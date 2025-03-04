@@ -1,6 +1,6 @@
 import ReactFlagsSelect from "react-flags-select";
 
-import { languages } from "utils/utils";
+import { languages } from "constants/constants";
 
 const LanguageSelector = ({
   selectedLanguage,

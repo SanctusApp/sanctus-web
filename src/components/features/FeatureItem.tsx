@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 import H3 from "components/_common/H3";
-import { cloudinaryUrl } from "utils/utils";
+import { CLOUDINARY_BASE_URL } from "constants/constants";
 
 const FeatureItem = ({ feature, i }: FeatureItemProps) => {
   const { t } = useTranslation();
@@ -25,7 +25,7 @@ const FeatureItem = ({ feature, i }: FeatureItemProps) => {
         transition={{ type: "spring", stiffness: 300 }}
       >
         <img
-          src={`${cloudinaryUrl}v1628619914/sanctus/feature-${feature}.svg`}
+          src={`${CLOUDINARY_BASE_URL}v1628619914/sanctus/feature-${feature}.svg`}
           alt={`feature-${feature}-icon`}
           className="w-20 h-20"
         />

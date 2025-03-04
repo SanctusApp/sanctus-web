@@ -23,7 +23,7 @@
       "components/*": ["components/*"],
       "assets/*": ["assets/*"],
       "pages/*": ["pages/*"],
-      "utils/*": ["utils/*"],
+      "constants/*": ["constants/*"],
       "hooks/*": ["hooks/*"],
       "App": ["App"]
     }

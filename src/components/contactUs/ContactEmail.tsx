@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { contactEmail } from "utils/utils";
+import { contactEmail } from "constants/constants";
 
 const ContactEmail = () => (
   <motion.a

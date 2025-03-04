@@ -9,7 +9,7 @@ import MenuButton from "components/menu/MenuButton";
 import BrandLink from "components/menu/BrandLink";
 import LanguageSelector from "components/menu/LanguageSelector";
 import useIsPrivacyPage from "hooks/useIsPrivacyPage";
-import { defaultLanguageCode, languages } from "utils/utils";
+import { defaultLanguageCode, languages } from "constants/constants";
 
 const NavMenu = () => {
   const location = useLocation();

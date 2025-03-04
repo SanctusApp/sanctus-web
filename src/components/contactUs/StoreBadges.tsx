@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import { cloudinaryUrl, STORE_URL } from "utils/utils";
+import { CLOUDINARY_BASE_URL, STORE_URL } from "constants/constants";
 import MotionBadge from "components/contactUs/MotionBadge";
 
 const StoreBadges = ({ t }: StoreBadgesProps) => (
@@ -34,6 +34,6 @@ interface StoreBadgesProps {
   t: (key: string) => string;
 }
 
-const GOOGLE_PLAY_BADGE_URL = `${cloudinaryUrl}v1628619914/sanctus/play_store_badge.png`;
+const GOOGLE_PLAY_BADGE_URL = `${CLOUDINARY_BASE_URL}v1628619914/sanctus/play_store_badge.png`;
 const APP_STORE_BADGE_URL =
   "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg";

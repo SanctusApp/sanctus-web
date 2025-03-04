@@ -11,5 +11,4 @@ export const defaultLanguageCode = "pt";
 
 export const contactEmail = "mailto:include.add@gmail.com";
 
-export const cloudinaryUrl =
-  "https://res.cloudinary.com/dplgnsjzm/image/upload/";
+  export const CLOUDINARY_BASE_URL= "https://res.cloudinary.com/dplgnsjzm/image/upload/"
