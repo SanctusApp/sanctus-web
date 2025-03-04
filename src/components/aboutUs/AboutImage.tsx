@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import { cloudinaryUrl } from "utils/utils";
+
 const AboutImage = () => (
   <motion.div
     className="w-full md:w-1/2 flex items-end"
@@ -14,5 +16,4 @@ const AboutImage = () => (
 
 export default AboutImage;
 
-const IMAGE_URL =
-  "https://res.cloudinary.com/dplgnsjzm/image/upload/v1628780787/sanctus/about-img.svg";
+const IMAGE_URL = `${cloudinaryUrl}v1628780787/sanctus/about-img.svg`;

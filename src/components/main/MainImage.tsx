@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { cloudinaryUrl } from "utils/utils";
 
 const MainImage = ({ t }: MainImageProps) => (
   <motion.img
@@ -17,5 +18,4 @@ interface MainImageProps {
   t: (key: string) => string;
 }
 
-const IMAGE_URL =
-  "https://res.cloudinary.com/dplgnsjzm/image/upload/v1628780787/sanctus/main-img.svg";
+const IMAGE_URL = `${cloudinaryUrl}v1628780787/sanctus/main-img.svg`;

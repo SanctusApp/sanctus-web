@@ -9,4 +9,7 @@ export const languages = [
 
 export const defaultLanguageCode = "pt";
 
-export const contactEmail = "mailto:include.add@gmail.com"
+export const contactEmail = "mailto:include.add@gmail.com";
+
+export const cloudinaryUrl =
+  "https://res.cloudinary.com/dplgnsjzm/image/upload/";

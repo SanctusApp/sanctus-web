@@ -9,9 +9,13 @@ const SocialIcons = () => (
     transition={{ duration: 1, delay: 1.4 }}
     viewport={{ once: true }}
   >
-    <SocialIcon url="https://www.instagram.com/sanctusapp/" />
-    <SocialIcon url="https://www.facebook.com/Sanctus-B%C3%ADblia-Liturgia-Ter%C3%A7os-e-Ora%C3%A7%C3%B5es-106478487553539" />
+    <SocialIcon url={INSTAGRAM_URL} />
+    <SocialIcon url={FACEBOOK_URL} />
   </motion.div>
 );
 
 export default SocialIcons;
+
+const INSTAGRAM_URL = "https://www.instagram.com/sanctusapp/";
+const FACEBOOK_URL =
+  "https://www.facebook.com/Sanctus-B%C3%ADblia-Liturgia-Ter%C3%A7os-e-Ora%C3%A7%C3%B5es-106478487553539";
