@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
-import { FC, JSX } from "react";
 
-const Button: FC<ButtonProps> = ({
+const Button = ({
   children,
   variant = "primary",
   size = "md",
@@ -10,7 +9,7 @@ const Button: FC<ButtonProps> = ({
   className = "",
   onClick,
   ...props
-}): JSX.Element => {
+}: ButtonProps) => {
   const variants = {
     primary:
       "bg-brand text-white rounded-lg transition-all duration-300 hover:bg-[#E84C4D] hover:opacity-90 active:bg-[#D54446] ",

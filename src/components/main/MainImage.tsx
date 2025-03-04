@@ -1,7 +1,6 @@
-import { FC, JSX } from "react";
 import { motion } from "framer-motion";
 
-const MainImage: FC<MainImageProps> = ({ t }): JSX.Element => (
+const MainImage = ({ t }: MainImageProps) => (
   <motion.img
     src={IMAGE_URL}
     alt={t("cross_mountain_alt")}

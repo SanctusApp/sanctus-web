@@ -1,7 +1,6 @@
-import { FC, JSX } from "react";
 import { motion } from "framer-motion";
 
-const AboutImage: FC = (): JSX.Element => (
+const AboutImage = () => (
   <motion.div
     className="w-full md:w-1/2 flex items-end"
     initial={{ opacity: 0 }}

@@ -1,6 +1,6 @@
-import React, { JSX, ReactNode } from "react";
+import { ReactNode } from "react";
 
-const H1: React.FC<H1Props> = ({ children, className = "" }): JSX.Element => {
+const H1 = ({ children, className = "" }: H1Props) => {
   return (
     <h1
       className={`font-bold tracking-tighter text-5xl md:text-7xl lg:text-8xl ${className}`}

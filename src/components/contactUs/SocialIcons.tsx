@@ -1,8 +1,7 @@
-import { FC, JSX } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
-const SocialIcons: FC = (): JSX.Element => (
+const SocialIcons = () => (
   <motion.div
     className="flex gap-6 mt-4"
     initial={{ opacity: 0 }}

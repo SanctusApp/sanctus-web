@@ -1,10 +1,9 @@
-import { FC, JSX } from "react";
 import { motion } from "framer-motion";
 
 import { STORE_URL } from "utils/utils";
 import MotionBadge from "components/contactUs/MotionBadge";
 
-const StoreBadges: FC<StoreBadgesProps> = ({ t }): JSX.Element => (
+const StoreBadges = ({ t }: StoreBadgesProps) => (
   <div className="mt-4">
     <MotionBadge
       href={STORE_URL}
@@ -33,8 +32,8 @@ const StoreBadges: FC<StoreBadgesProps> = ({ t }): JSX.Element => (
   </div>
 );
 
-export default StoreBadges;
-
 interface StoreBadgesProps {
   t: (key: string) => string;
 }
+
+export default StoreBadges;

@@ -1,4 +1,3 @@
-import { FC, JSX } from "react";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
@@ -6,7 +5,7 @@ import H2 from "components/_common/H2";
 import Container from "components/_common/Container";
 import FeatureItem from "components/features/FeatureItem";
 
-const Features: FC = (): JSX.Element => {
+const Features = () => {
   const { t } = useTranslation();
 
   return (

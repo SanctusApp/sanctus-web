@@ -1,9 +1,8 @@
-import { FC, JSX } from "react";
 import { motion } from "framer-motion";
 
 import H1 from "components/_common/H1";
 
-const Title: FC = (): JSX.Element => (
+const Title = () => (
   <motion.div
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}

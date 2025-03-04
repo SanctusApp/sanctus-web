@@ -1,4 +1,3 @@
-import { FC, JSX } from "react";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
@@ -7,7 +6,7 @@ import Title from "components/main/Title";
 import MainButton from "components/main/MainButton";
 import MainImage from "components/main/MainImage";
 
-const Main: FC = (): JSX.Element => {
+const Main = () => {
   const { t } = useTranslation();
 
   return (

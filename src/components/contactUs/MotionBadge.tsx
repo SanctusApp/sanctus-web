@@ -1,7 +1,7 @@
-import { FC, JSX } from "react";
+import { JSX } from "react";
 import { motion, TargetAndTransition } from "framer-motion";
 
-const MotionBadge: FC<MotionBadgeProps> = ({
+const MotionBadge = ({
   href,
   src,
   alt,
@@ -10,7 +10,7 @@ const MotionBadge: FC<MotionBadgeProps> = ({
   animate,
   transition,
   children,
-}): JSX.Element => (
+}: MotionBadgeProps) => (
   <motion.a
     href={href}
     target="_blank"

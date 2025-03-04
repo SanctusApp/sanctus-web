@@ -1,13 +1,12 @@
-import { FC, JSX } from "react";
 import ReactFlagsSelect from "react-flags-select";
 
 import { languages } from "utils/utils";
 
-const LanguageSelector: FC<LanguageSelectorProps> = ({
+const LanguageSelector = ({
   selectedLanguage,
   handleLanguageChange,
   t,
-}): JSX.Element => (
+}: LanguageSelectorProps) => (
   <div className="hidden lg:block ml-auto">
     <ReactFlagsSelect
       selected={

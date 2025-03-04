@@ -1,11 +1,6 @@
-import { FC, JSX } from "react";
 import { Link } from "react-scroll";
 
-const MenuItems: FC<MenuItemsProps> = ({
-  isOpen,
-  setIsOpen,
-  t,
-}): JSX.Element => (
+const MenuItems = ({ isOpen, setIsOpen, t }: MenuItemsProps) => (
   <div
     className={`fixed top-0 right-0 w-4/5 lg:w-full h-full bg-white z-20 flex flex-col items-center justify-center space-y-8 transition-transform duration-500 ${
       isOpen ? "translate-x-0" : "translate-x-full"

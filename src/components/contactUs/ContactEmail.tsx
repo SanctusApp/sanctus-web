@@ -1,9 +1,8 @@
-import { FC, JSX } from "react";
 import { motion } from "framer-motion";
 
 import { contactEmail } from "utils/utils";
 
-const ContactEmail: FC = (): JSX.Element => (
+const ContactEmail = () => (
   <motion.a
     href={contactEmail}
     className="text-lg text-blue-600 hover:underline"

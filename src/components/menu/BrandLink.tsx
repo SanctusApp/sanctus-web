@@ -1,11 +1,10 @@
-import { FC, JSX } from "react";
 import { Link } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 import BrandIcon from "components/menu/BrandIcon";
 import useIsPrivacyPage from "hooks/useIsPrivacyPage";
 
-const BrandLink: FC = (): JSX.Element => {
+const BrandLink = () => {
   const isPrivacyPage = useIsPrivacyPage();
 
   return (

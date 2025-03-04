@@ -1,6 +1,4 @@
-import { FC, JSX } from "react";
-
-const BrandIcon: FC = (): JSX.Element => {
+const BrandIcon = () => {
   return (
     <img
       src={IMAGE_URL}

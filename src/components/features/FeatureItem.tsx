@@ -1,10 +1,9 @@
-import { FC, JSX } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 import H3 from "components/_common/H3";
 
-const FeatureItem: FC<FeatureItemProps> = ({ feature, i }): JSX.Element => {
+const FeatureItem = ({ feature, i }: FeatureItemProps) => {
   const { t } = useTranslation();
   return (
     <motion.div

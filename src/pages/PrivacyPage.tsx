@@ -1,11 +1,9 @@
-import { FC, JSX } from "react";
-
 import Container from "components/_common/Container";
 import H2 from "components/_common/H2";
 import H3 from "components/_common/H3";
 import { contactEmail } from "utils/utils";
 
-const PrivacyPage: FC = (): JSX.Element => {
+const PrivacyPage = () => {
   return (
     <Container className="bg-white text-[#595959] min-h-screen">
       <div className=" text-2xl font-bold text-center ">PRIVACY POLICY</div>

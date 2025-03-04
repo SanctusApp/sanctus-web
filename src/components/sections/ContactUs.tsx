@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { Element } from "react-scroll";
 import { useTranslation } from "react-i18next";
 
@@ -8,7 +7,7 @@ import StoreBadges from "components/contactUs/StoreBadges";
 import ContactEmail from "components/contactUs/ContactEmail";
 import SocialIcons from "components/contactUs/SocialIcons";
 
-const ContactUs: FC = () => {
+const ContactUs = () => {
   const { t } = useTranslation();
 
   return (

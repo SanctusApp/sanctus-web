@@ -1,10 +1,9 @@
-import { FC, JSX } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 import H2 from "components/_common/H2";
 
-const AboutText: FC = (): JSX.Element => {
+const AboutText = () => {
   const { t } = useTranslation();
   return (
     <motion.div

@@ -5,7 +5,7 @@ import NavMenu from "components/menu/NavMenu";
 import LandingPage from "pages/LandingPage";
 import PrivacyPage from "pages/PrivacyPage";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <CookieConsent
@@ -29,6 +29,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
